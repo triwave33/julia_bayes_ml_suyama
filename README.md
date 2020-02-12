@@ -1,5 +1,5 @@
 # julia_bayes_ml_suyama
-reproducing figures using JuliaLang in "Introduction to Machine Learning by Bayesian Inference" written by Suyama, Atsushi.
+reproducing figures in "Introduction to Machine Learning by Bayesian Inference" written by Suyama, Atsushi using JuliaLang.
 
 ![image](https://user-images.githubusercontent.com/36175603/74348688-6d580500-4df6-11ea-8883-780d44352897.png)
 
