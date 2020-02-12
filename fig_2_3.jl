@@ -25,8 +25,9 @@ a = bar(x_scale, p_arr[:,1], title="M=10, mu=0.5", label="",
 b = bar(x_scale, p_arr[:,2], title="M=10, mu=0.2", label="",
           titlefont=fs, bar_edges= true,
           color=color, xlabel="m", ylabel="probability")
+
 c = bar(x_scale, p_arr[:,3], title="M=20, mu=0.6", label="",
           titlefont=fs, bar_edges=true,
           color=color, xlabel="m", ylabel="probability")
 plot(a,b,c, layout=l)
-
+savefig("fig_2_3.png")

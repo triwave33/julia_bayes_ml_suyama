@@ -1,6 +1,7 @@
 using Random
 using Plots
 
+
 L = 500
 n_trial = 4
 
@@ -25,8 +26,10 @@ for t in 1:n_trial
   plot(H_array, label="")
 end
 
+
 plot!(Vector[[H_theory]], linecolor=:black, linestyle=:dash, 
-        linetype=:hline, width=1, label="")
+        linetype=:hline, width=1, label="", 
+        title = "Fig 2.1 approximation of entropy by sampling")
 xlabel!("sample number")
 ylabel!("expectation")
 savefig("fig_2_1.png")
