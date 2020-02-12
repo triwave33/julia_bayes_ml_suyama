@@ -7,6 +7,27 @@ reproducing figures using JuliaLang in "Introduction to Machine Learning by Baye
 ![fig_2_1](https://user-images.githubusercontent.com/36175603/74021931-e105a680-49df-11ea-8746-c4f9843dba23.png)
 
 ## Fig 2_2
-### 2.2.2 Bernoulli destribution
+### 2.2.2 Bernoulli distribution
  
 ![Fig 2_2.png](https://user-images.githubusercontent.com/36175603/74019791-8b2eff80-49db-11ea-9ea1-80810041f79d.png)
+
+
+
+
+## Fig 2_4
+### 2.2. Multinomial distribution
+
+![fig_2_3](https://user-images.githubusercontent.com/36175603/74347873-19005580-4df5-11ea-8f00-c3844d29eb10.png)
+
+#### Julia Tips
+
+layout of divided figures
+
+```JUlia
+l = @layout [a; b c]
+a = bar(...)
+b = bar(...)
+c = bar(...)
+plot(a,b,c, layout=l)
+```
+
