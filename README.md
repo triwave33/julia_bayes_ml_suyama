@@ -8,12 +8,22 @@ reproducing figures in "Introduction to Machine Learning by Bayesian Inference" 
 ## Fig 2_1
 ### 2.1.5 Approximate calculation of expectation by sampling
 
+<img src="https://latex.codecogs.com/gif.latex?\left&space;\langle&space;f(x)&space;\right&space;\rangle_{p(x)}&space;\approx&space;\frac{1}{L}&space;\sum_{l=1}^{L}f(x^{(l)})"/>
+
 ![fig_2_1](https://user-images.githubusercontent.com/36175603/74021931-e105a680-49df-11ea-8746-c4f9843dba23.png)
+
 
 ________________________________________
 
 ## Fig 2_2
 ### 2.2.1 Bernoulli distribution
+
+<img src="https://latex.codecogs.com/gif.latex?\textup{Bern}&space;(x|\mu)&space;=&space;\mu^x(1-\mu)^{1-x}"/>
+ 
+ Entropy of Bernoulli distribution
+ 
+ <img src="https://latex.codecogs.com/gif.latex?H[\textup{Bern}&space;(x|\mu)]&space;=&space;-\mu&space;\textup{ln}&space;\mu&space;-&space;(1-\mu)&space;\textup{ln}&space;(1-\mu)"/>
+ 
  
 ![Fig 2_2.png](https://user-images.githubusercontent.com/36175603/74019791-8b2eff80-49db-11ea-9ea1-80810041f79d.png)
 
