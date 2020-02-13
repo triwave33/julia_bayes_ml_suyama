@@ -20,7 +20,7 @@ ________________________________________
 
 <img src="https://latex.codecogs.com/gif.latex?\textup{Bern}&space;(x|\mu)&space;=&space;\mu^x(1-\mu)^{1-x}"/>
  
- Entropy of Bernoulli distribution
+ #### Entropy of Bernoulli distribution
  
  <img src="https://latex.codecogs.com/gif.latex?H[\textup{Bern}&space;(x|\mu)]&space;=&space;-\mu&space;\textup{ln}&space;\mu&space;-&space;(1-\mu)&space;\textup{ln}&space;(1-\mu)"/>
  
@@ -32,6 +32,8 @@ ________________________________________
 
 ## Fig 2_3
 ### 2.2.2 Binomial distribution
+
+<img src="https://latex.codecogs.com/gif.latex?\mathrm{Bin}(m|M,&space;\mu)&space;=&space;\,{}_M&space;\mathrm{C}_m&space;\mu^m(1-\mu)^{M-m}"/>
 
 ![fig_2_3](https://user-images.githubusercontent.com/36175603/74347873-19005580-4df5-11ea-8f00-c3844d29eb10.png)
 
