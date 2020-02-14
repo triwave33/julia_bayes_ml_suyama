@@ -51,4 +51,6 @@ plot(a,b,c, layout=l)
 ## Fig 2_4
 ### 2.2.4 Multinomial distribution
 
+<img src="https://latex.codecogs.com/gif.latex?\textup{Mult}(m|\pi,&space;M)&space;=&space;M!\prod_{k=1}^{K}\frac{\pi_k^{m_{k}}}{m_k&space;!}"/>
+
 ![fig_2_4](https://user-images.githubusercontent.com/36175603/74550301-80a0d700-4f94-11ea-99f3-e7ddf120ada2.png)
