@@ -48,9 +48,41 @@ b = bar(...)
 c = bar(...)
 plot(a,b,c, layout=l)
 ```
+
+____________________________________________________________
+
+
 ## Fig 2_4
 ### 2.2.4 Multinomial distribution
 
 <img src="https://latex.codecogs.com/gif.latex?\textup{Mult}(m|\pi,&space;M)&space;=&space;M!\prod_{k=1}^{K}\frac{\pi_k^{m_{k}}}{m_k&space;!}"/>
 
 ![fig_2_4](https://user-images.githubusercontent.com/36175603/74550301-80a0d700-4f94-11ea-99f3-e7ddf120ada2.png)
+
+#### Julia tips
+
+- 3D barplot
+
+Makie.jl provides 3d scatter function as meshscatter.
+3d barplot can be obtained from meshscatter like below.
+
+```Julia 
+using Makie
+using AbstractPlotting
+
+markersize = Vec3f0.(1,1, -vec(mplot))
+```
+Here, 1x1 tile is extended to (x,y) plane in z=0 from scattering points (so we get "bars").
+
+- layout
+
+Makie layout is used for displaying three bargraph.
+Both an entire region in the figure or a sub-region containing each barplot are called "scene"
+We can define the size of resion (see script).
+
+Once scenes are defined. We can overwrite the scene by calling plot function like this.
+
+```
+meshgrid!(scene, ...)
+```
+
