@@ -7,7 +7,7 @@ mu_arr = [0.5, 0.2, 0.6]
 N = 20
 l = @layout [a; b c]
 color=:darkblue; margin = 40mm
-fs = 10
+fs = 10 # fontsize
 
 
 p_arr = zeros(N+1, length(M_arr))
