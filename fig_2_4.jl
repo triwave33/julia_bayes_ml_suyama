@@ -4,6 +4,8 @@ using Makie
 using AbstractPlotting
 
 K = 3
+AXIS_LIM = 10
+SCALE_FACTOR = 50
 
 function multinomial_distribution(M, π, mk)
   val = factorial(M)
@@ -29,9 +31,13 @@ end
 
 
 function plot_multinomiral(scene, mplot, scale_factor) 
+  limits = Rect3D(Vec3f0(0), Vec(AXIS_LIM+1,AXIS_LIM+1,0.2)) 
+  marker = Rect3D(Vec(-0.0, -0.0, 0), Vec3f0(1))
 	markersize = Vec3f0.(1,1, -vec(mplot))
 	color=vec(mplot/maximum(mplot)) 
 	mplot[mplot .== 0] .= NaN
+
+  x = y = 0:(AXIS_LIM)
 	
 	meshscatter!(scene, x,y,mplot,
 	    limits = limits,
@@ -43,8 +49,8 @@ function plot_multinomiral(scene, mplot, scale_factor)
 	axis = scene[Axis]
 	axis[:names][:axisnames] = ("m_1", "m_2", "z")
 	tstyle = axis[:names] # or just get the nested attributes and work directly with them
-	tstyle[:textsize] = 400
-	axis[:ticks][:textsize] = (300,300,300)
+	tstyle[:textsize] = 600
+	axis[:ticks][:textsize] = (400,400,400)
 
 	scale!(scene, 1,1,scale_factor)
 end
@@ -87,27 +93,27 @@ scene3 = Scene(scene, area3)
 M = 5
 π= [0.4, 0.3, 0.3]
 Multi = get_bardata(M, π)
-Multi_plot = zeros(11,11)
+Multi_plot = zeros(AXIS_LIM+1,AXIS_LIM+1) # 0:AXIS_LIM
 Multi_plot[1:M+1, 1:M+1] = Multi
-plot_multinomiral(scene1, Multi_plot, 50)
+plot_multinomiral(scene1, Multi_plot, SCALE_FACTOR)
 
 ## layout 2 ##
 M = 5
 π= [0.15, 0.7, 0.15]
 Multi = get_bardata(M, π)
-Multi_plot = zeros(11,11)
+Multi_plot = zeros(AXIS_LIM+1,AXIS_LIM+1)
 Multi_plot[1:M+1, 1:M+1] = Multi
-plot_multinomiral(scene2, Multi_plot, 50)
+plot_multinomiral(scene2, Multi_plot, SCALE_FACTOR)
 
 ## layout 3 ##
 M = 10
 π= [0.15, 0.7, 0.15]
 Multi = get_bardata(M, π)
-Multi_plot = zeros(11,11)
+Multi_plot = zeros(AXIS_LIM+1,AXIS_LIM+1)
 Multi_plot[1:M+1, 1:M+1] = Multi
-plot_multinomiral(scene3, Multi_plot, 50)
+plot_multinomiral(scene3, Multi_plot, SCALE_FACTOR)
 
 
 
 scene
-Makie.save("fig_2_4..png", scene)
+Makie.save("fig_2_4.png", scene)
