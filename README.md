@@ -86,3 +86,11 @@ Once scenes are defined. We can overwrite the scene by calling plot function lik
 meshgrid!(scene, ...)
 ```
 
+________________________________________
+
+## Fig 2.6
+### 2.2.5 Poison distribution
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Poi}(x|\lambda)&space;=&space;\frac{\lambda^{x}}{x&space;!}&space;e^{-\lambda}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Poi}(x|\lambda)&space;=&space;\frac{\lambda^{x}}{x&space;!}&space;e^{-\lambda}" title="\textup{Poi}(x|\lambda) = \frac{\lambda^{x}}{x !} e^{-\lambda}" /></a>
+
+![fig_2_6](https://user-images.githubusercontent.com/36175603/74583636-47a44900-500c-11ea-8e42-1e46b86809cb.png)
