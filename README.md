@@ -94,3 +94,17 @@ ________________________________________
 <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Poi}(x|\lambda)&space;=&space;\frac{\lambda^{x}}{x&space;!}&space;e^{-\lambda}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Poi}(x|\lambda)&space;=&space;\frac{\lambda^{x}}{x&space;!}&space;e^{-\lambda}" title="\textup{Poi}(x|\lambda) = \frac{\lambda^{x}}{x !} e^{-\lambda}" /></a>
 
 ![fig_2_6](https://user-images.githubusercontent.com/36175603/74583636-47a44900-500c-11ea-8e42-1e46b86809cb.png)
+
+__________________________________________
+
+## Fig 2.7
+### Beta distribution
+
+#### beta distribution
+<a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Beta}(\mu|\a,b)&space;=&space;C_B(a,b)\mu^{(a-1)})(1-\mu)^{(b-1)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Beta}(\mu|\a,b)&space;=&space;C_B(a,b)\mu^{(a-1)})(1-\mu)^{(b-1)}" title="\textup{Beta}(\mu|\a,b) = C_B(a,b)\mu^{(a-1)})(1-\mu)^{(b-1)}" /></a>
+
+
+ #### gamma function
+ <img src="https://latex.codecogs.com/gif.latex?C_B(a,b)&space;=&space;\frac{\Gamma&space;(a&plus;b)}{\Gamma(a)\Gamma(b)}" title="C_B(a,b) = \frac{\Gamma (a+b)}{\Gamma(a)\Gamma(b)}" /></a>
+
+![fig_2_7](https://user-images.githubusercontent.com/36175603/74600263-29088580-50d2-11ea-931d-dc2695cb37b8.png)
