@@ -8,6 +8,11 @@ for (i,μ) in enumerate(range(0,1, length = N))
 end
 
 plot(range(0,1,length=N), H_array, label="", title="fig 2.2")
-xlabel!(L"$\mu$")
+xlabel!("mu")
+
+# TODO LaTeXStrings does not work even in the case of only one symbol
+#xlabel!(L"$\mu$")
+
+
 ylabel!("entropy")
 savefig("fig_2_2.png")
