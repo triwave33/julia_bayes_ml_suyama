@@ -131,3 +131,13 @@ __________________________________________
 
 ![fig_2_7](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_7.png)
 
+
+## Fig 2.8
+### Dirichlet distribution
+
+#### dirichlet distribution
+Formura should be added
+
+
+![fig_2_8](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_8.png)
+
