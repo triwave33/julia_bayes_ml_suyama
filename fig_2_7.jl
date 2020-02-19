@@ -19,8 +19,8 @@ b_arr = (0.5, 0.8, 1.0, 40.0, 5.0)
 for (a,b) in zip(a_arr, b_arr)
   plot_Beta(μ, a, b)
 end
-savefig("fig_2_7.png")
   
 plot!(title="Fig. 2.7. Beta distribution")
 xlabel!("mu")
 ylabel!("Probability")
+savefig("fig_2_7.png")
