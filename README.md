@@ -133,13 +133,22 @@ __________________________________________
 
 
 ## Fig 2.8
-### Dirichlet distribution
+### 2.3.2 Dirichlet distribution
 
 #### dirichlet distribution
-Formura should be added
 
+<a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Dir}(\pi|\alpha)=&space;C_D(\alpha)\prod_{k=1}^{K}\pi_k^{\alpha_k-1}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Dir}(\pi|\alpha)=&space;C_D(\alpha)\prod_{k=1}^{K}\pi_k^{\alpha_k-1}" title="\textup{Dir}(\pi|\alpha)= C_D(\alpha)\prod_{k=1}^{K}\pi_k^{\alpha_k-1}" /></a>
+
+where
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=C_D(\alpha)=\frac{\Gamma&space;(\sum_{k=1}^{K}\alpha_k&space;)}{\prod_{k=1}^{K}\Gamma(\alpha_k)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C_D(\alpha)=\frac{\Gamma&space;(\sum_{k=1}^{K}\alpha_k&space;)}{\prod_{k=1}^{K}\Gamma(\alpha_k)}" title="C_D(\alpha)=\frac{\Gamma (\sum_{k=1}^{K}\alpha_k )}{\prod_{k=1}^{K}\Gamma(\alpha_k)}" /></a>
+
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\Gamma(\cdot&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Gamma(\cdot&space;)" title="\Gamma(\cdot )" /></a>
+is Gamma function.
 
 ![fig_2_8](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_8.png)
+
 
 #### Julia tips
 
