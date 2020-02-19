@@ -157,3 +157,17 @@ If you want to omit the color bar in a plot. Use legend=:none option in plot fun
 ```Julia 
 legend=:none
 ``` 
+
+## Fig 2.9
+### 2.3.3 Gamma distribution
+
+#### gamma distribution
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Gam}(\lambda|a,b)=C_G(a,b)\lambda^{a-1}e^{-b\lambda}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Gam}(\lambda|a,b)=C_G(a,b)\lambda^{a-1}e^{-b\lambda}" title="\textup{Gam}(\lambda|a,b)=C_G(a,b)\lambda^{a-1}e^{-b\lambda}" /></a>
+
+where
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=C_G(a,b)=\frac{b^a}{\Gamma(a)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C_G(a,b)=\frac{b^a}{\Gamma(a)}" title="C_G(a,b)=\frac{b^a}{\Gamma(a)}" /></a>
+
+![fig_2_9](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_9.png)
+
