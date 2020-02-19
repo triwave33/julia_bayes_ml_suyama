@@ -141,3 +141,10 @@ Formura should be added
 
 ![fig_2_8](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_8.png)
 
+#### Julia tips
+
+If you want to omit the color bar in a plot. Use legend=:none option in plot function.
+
+```Julia 
+legend=:none
+``` 
