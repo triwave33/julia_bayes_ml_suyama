@@ -91,7 +91,7 @@ using AbstractPlotting
 
 markersize = Vec3f0.(1,1, -vec(mplot))
 ```
-Here, 1x1 tile is extended to (x,y) plane in z=0 from scattering points (so we get "bars").
+Here, 1x1 tile on scatterring point is extended down to (x,y) plane by typing -1 * z_value (in this case; vec(mplot)). Then, we get "bars"!
 
 - layout
 
@@ -99,10 +99,10 @@ Makie layout is used for displaying three bargraph.
 Both an entire region in the figure or a sub-region containing each barplot are called "scene"
 We can define the size of resion (see script).
 
-Once scenes are defined. We can overwrite the scene by calling plot function like this.
+Once scenes are defined. We can overwrite each one by calling plot function like this.
 
 ```
-meshgrid!(scene, ...)
+meshgrid!(scene1, ...)
 ```
 
 ________________________________________
