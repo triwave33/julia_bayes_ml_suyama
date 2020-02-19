@@ -5,12 +5,26 @@ reproducing figures in "Introduction to Machine Learning by Bayesian Inference" 
 
 (ISBN 9784061538320)
 
+## Environments
+
+- Julia: 1.3.1
+
+  - "LaTeXStrings"     => v"1.0.3"
+  - "Combinatorics"    => v"1.0.0"
+  - "Makie"            => v"0.9.5"
+  - "IJulia"           => v"1.20.2"
+  - "AbstractPlotting" => v"0.9.17"
+  - "Plots"            => v"0.28.4"
+  - "Colors"           => v"0.9.6"
+
+
 ## Fig 2_1
 ### 2.1.5 Approximate calculation of expectation by sampling
 
 <img src="https://latex.codecogs.com/gif.latex?\left&space;\langle&space;f(x)&space;\right&space;\rangle_{p(x)}&space;\approx&space;\frac{1}{L}&space;\sum_{l=1}^{L}f(x^{(l)})"/>
 
-![fig_2_1](https://user-images.githubusercontent.com/36175603/74021931-e105a680-49df-11ea-8746-c4f9843dba23.png)
+
+![fig_2_1](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_1.png)
 
 
 ________________________________________
@@ -25,7 +39,8 @@ ________________________________________
  <img src="https://latex.codecogs.com/gif.latex?H[\textup{Bern}&space;(x|\mu)]&space;=&space;-\mu&space;\textup{ln}&space;\mu&space;-&space;(1-\mu)&space;\textup{ln}&space;(1-\mu)"/>
  
  
-![Fig 2_2.png](https://user-images.githubusercontent.com/36175603/74019791-8b2eff80-49db-11ea-9ea1-80810041f79d.png)
+
+![fig_2_2](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_2.png)
 
 ________________________________________
 
@@ -35,7 +50,9 @@ ________________________________________
 
 <img src="https://latex.codecogs.com/gif.latex?\mathrm{Bin}(m|M,&space;\mu)&space;=&space;\,{}_M&space;\mathrm{C}_m&space;\mu^m(1-\mu)^{M-m}"/>
 
-![fig_2_3](https://user-images.githubusercontent.com/36175603/74347873-19005580-4df5-11ea-8f00-c3844d29eb10.png)
+
+![fig_2_3](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_3.png)
+
 
 #### Julia Tips
 
@@ -57,7 +74,9 @@ ____________________________________________________________
 
 <img src="https://latex.codecogs.com/gif.latex?\textup{Mult}(m|\pi,&space;M)&space;=&space;M!\prod_{k=1}^{K}\frac{\pi_k^{m_{k}}}{m_k&space;!}"/>
 
-![fig_2_4](https://user-images.githubusercontent.com/36175603/74550301-80a0d700-4f94-11ea-99f3-e7ddf120ada2.png)
+
+![fig_2_4](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_4.png)
+
 
 #### Julia tips
 
@@ -93,7 +112,9 @@ ________________________________________
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Poi}(x|\lambda)&space;=&space;\frac{\lambda^{x}}{x&space;!}&space;e^{-\lambda}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Poi}(x|\lambda)&space;=&space;\frac{\lambda^{x}}{x&space;!}&space;e^{-\lambda}" title="\textup{Poi}(x|\lambda) = \frac{\lambda^{x}}{x !} e^{-\lambda}" /></a>
 
-![fig_2_6](https://user-images.githubusercontent.com/36175603/74583636-47a44900-500c-11ea-8e42-1e46b86809cb.png)
+
+![fig_2_6](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_6.png)
+
 
 __________________________________________
 
@@ -107,4 +128,6 @@ __________________________________________
  #### gamma function
  <img src="https://latex.codecogs.com/gif.latex?C_B(a,b)&space;=&space;\frac{\Gamma&space;(a&plus;b)}{\Gamma(a)\Gamma(b)}" title="C_B(a,b) = \frac{\Gamma (a+b)}{\Gamma(a)\Gamma(b)}" /></a>
 
-![fig_2_7](https://user-images.githubusercontent.com/36175603/74600263-29088580-50d2-11ea-931d-dc2695cb37b8.png)
+
+![fig_2_7](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_7.png)
+
