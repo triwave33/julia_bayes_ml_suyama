@@ -85,8 +85,6 @@ b = plot!(; annotations=[(-4.0, 0.62, text("KL(q||p)=$kl2", 6))])
 #case 3
 cn = 3 # Case Number
 c = plot()
-#  kl1 = KL(μ_arr[i], σ_arr[i],μ̂_arr[i], σ̂_arr[i])
-#  kl2 = KL(μ̂_arr[i], σ̂_arr[i],μ_arr[i], σ_arr[i])
 c = plot_1D_norm(x_arr, μ_arr[cn], σ_arr[cn],
     false; fs...)
 c = plot_1D_norm(x_arr, μ̂_arr[cn], σ̂_arr[cn],
