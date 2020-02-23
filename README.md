@@ -180,3 +180,15 @@ where
 
 ![fig_2_10](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_10.png)
 
+## Fig 2.11
+### 2.3.4 One-dimensional Gaussian distribution
+
+#### Kullback-Laibler divergence
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{align*}&space;\textup{KL}\left&space;[&space;q(x)||p(x))&space;\right&space;]&space;&=&space;-\int&space;q(x)\,\textup{ln}\frac{p(x)}{q(x)}dx&space;\\&space;&=&space;\left&space;\langle&space;\textup{ln}\,q(x)&space;\right&space;\rangle_{q(x)}&space;-&space;\left&space;\langle&space;\textup{ln}\,p(x)&space;\right&space;\rangle_{q(x)}&space;\end{align*}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{align*}&space;\textup{KL}\left&space;[&space;q(x)||p(x))&space;\right&space;]&space;&=&space;-\int&space;q(x)\,\textup{ln}\frac{p(x)}{q(x)}dx&space;\\&space;&=&space;\left&space;\langle&space;\textup{ln}\,q(x)&space;\right&space;\rangle_{q(x)}&space;-&space;\left&space;\langle&space;\textup{ln}\,p(x)&space;\right&space;\rangle_{q(x)}&space;\end{align*}" title="\begin{align*} \textup{KL}\left [ q(x)||p(x)) \right ] &= -\int q(x)\,\textup{ln}\frac{p(x)}{q(x)}dx \\ &= \left \langle \textup{ln}\,q(x) \right \rangle_{q(x)} - \left \langle \textup{ln}\,p(x) \right \rangle_{q(x)} \end{align*}" /></a>
+
+#### KL divergence for 1D Gaussian distribution
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\textup{KL}\left&space;[&space;q(x)||p(x))&space;\right&space;]&space;=&space;\frac{1}{2}\left&space;\{&space;\frac{(\mu&space;-&space;\hat{\mu})^2&plus;\hat{\sigma}^2}{\sigma^2}&space;&plus;&space;\textup{ln}\frac{\sigma^2}{\hat{\sigma}^2}-1&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{KL}\left&space;[&space;q(x)||p(x))&space;\right&space;]&space;=&space;\frac{1}{2}\left&space;\{&space;\frac{(\mu&space;-&space;\hat{\mu})^2&plus;\hat{\sigma}^2}{\sigma^2}&space;&plus;&space;\textup{ln}\frac{\sigma^2}{\hat{\sigma}^2}-1&space;\right&space;\}" title="\textup{KL}\left [ q(x)||p(x)) \right ] = \frac{1}{2}\left \{ \frac{(\mu - \hat{\mu})^2+\hat{\sigma}^2}{\sigma^2} + \textup{ln}\frac{\sigma^2}{\hat{\sigma}^2}-1 \right \}" /></a>
+
+![fig_2_11](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_11.png)
