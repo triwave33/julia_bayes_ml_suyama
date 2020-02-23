@@ -171,3 +171,12 @@ where
 
 ![fig_2_9](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_9.png)
 
+## Fig 2.10
+### 2.3.4 One-dimensional Gaussian distribution
+
+#### 1D Gaussian distribution
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{N}(x|\mu,\sigma^2)&space;=&space;\frac{1}{\sqrt{2\pi\sigma^2}}\textup{exp}\left&space;\{&space;-\frac{(x-\mu)^2}{2\sigma^2}&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{N}(x|\mu,\sigma^2)&space;=&space;\frac{1}{\sqrt{2\pi\sigma^2}}\textup{exp}\left&space;\{&space;-\frac{(x-\mu)^2}{2\sigma^2}&space;\right&space;\}" title="\mathcal{N}(x|\mu,\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}\textup{exp}\left \{ -\frac{(x-\mu)^2}{2\sigma^2} \right \}" /></a>
+
+![fig_2_10](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_10.png)
+
