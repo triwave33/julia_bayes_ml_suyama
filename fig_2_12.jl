@@ -25,7 +25,8 @@ l = @layout [a; b c]
 
 
 ### case 1 ###
-Σ= [3.0 0.0; 0.0 3.0]
+Σ= [3.0 0.0;
+     0.0 3.0]
 Z = exp.([D_log_Gauss([i; j], μ, Σ) for i in x1, j in x2]')
 
 a = plot(x1, x2, Z, st=:surface, camera= (30,60),
@@ -39,14 +40,16 @@ a = plot(x1, x2, Z, st=:surface, camera= (30,60),
     legend=:none)
 
 ### case 2 ###
-Σ= [2.0 -sqrt(3); -sqrt(3) 4.0 ]
+Σ= [2.0 -sqrt(3); 
+    -sqrt(3) 4.0 ]
 Z = exp.([D_log_Gauss([i; j], μ, Σ) for i in x1, j in x2]')
 
 b = plot(x1, x2, Z, st=:surface, camera= (30,60),
     legend=:none)
 
-### case 1 ###
-Σ= [4.0 sqrt(3); sqrt(3) 2.0]
+### case 3 ###
+Σ= [4.0 sqrt(3); 
+     sqrt(3) 2.0]
 Z = exp.([D_log_Gauss([i; j], μ, Σ) for i in x1, j in x2]')
 
 c = plot(x1, x2, Z, st=:surface, camera= (30,60),
