@@ -24,8 +24,7 @@ reproducing figures in "Introduction to Machine Learning by Bayesian Inference" 
 <img src="https://latex.codecogs.com/gif.latex?\left&space;\langle&space;f(x)&space;\right&space;\rangle_{p(x)}&space;\approx&space;\frac{1}{L}&space;\sum_{l=1}^{L}f(x^{(l)})"/>
 
 
-![fig_2_1](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_1.png)
-
+![fig_2_1](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_01.png)
 
 ________________________________________
 
@@ -40,7 +39,7 @@ ________________________________________
  
  
 
-![fig_2_2](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_2.png)
+![fig_2_2](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_02.png)
 
 ________________________________________
 
@@ -51,7 +50,7 @@ ________________________________________
 <img src="https://latex.codecogs.com/gif.latex?\mathrm{Bin}(m|M,&space;\mu)&space;=&space;\,{}_M&space;\mathrm{C}_m&space;\mu^m(1-\mu)^{M-m}"/>
 
 
-![fig_2_3](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_3.png)
+![fig_2_3](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_03.png)
 
 
 #### Julia Tips
@@ -75,7 +74,7 @@ ____________________________________________________________
 <img src="https://latex.codecogs.com/gif.latex?\textup{Mult}(m|\pi,&space;M)&space;=&space;M!\prod_{k=1}^{K}\frac{\pi_k^{m_{k}}}{m_k&space;!}"/>
 
 
-![fig_2_4](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_4.png)
+![fig_2_4](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_04.png)
 
 
 #### Julia tips
@@ -113,7 +112,7 @@ ________________________________________
 <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{Poi}(x|\lambda)&space;=&space;\frac{\lambda^{x}}{x&space;!}&space;e^{-\lambda}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{Poi}(x|\lambda)&space;=&space;\frac{\lambda^{x}}{x&space;!}&space;e^{-\lambda}" title="\textup{Poi}(x|\lambda) = \frac{\lambda^{x}}{x !} e^{-\lambda}" /></a>
 
 
-![fig_2_6](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_6.png)
+![fig_2_6](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_06.png)
 
 
 __________________________________________
@@ -129,7 +128,7 @@ __________________________________________
  <img src="https://latex.codecogs.com/gif.latex?C_B(a,b)&space;=&space;\frac{\Gamma&space;(a&plus;b)}{\Gamma(a)\Gamma(b)}" title="C_B(a,b) = \frac{\Gamma (a+b)}{\Gamma(a)\Gamma(b)}" /></a>
 
 
-![fig_2_7](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_7.png)
+![fig_2_7](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_07.png)
 
 
 ## Fig 2.8
@@ -147,7 +146,7 @@ where
 <a href="https://www.codecogs.com/eqnedit.php?latex=\Gamma(\cdot&space;)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\Gamma(\cdot&space;)" title="\Gamma(\cdot )" /></a>
 is Gamma function.
 
-![fig_2_8](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_8.png)
+![fig_2_8](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_08.png)
 
 
 #### Julia tips
@@ -169,7 +168,7 @@ where
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=C_G(a,b)=\frac{b^a}{\Gamma(a)}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?C_G(a,b)=\frac{b^a}{\Gamma(a)}" title="C_G(a,b)=\frac{b^a}{\Gamma(a)}" /></a>
 
-![fig_2_9](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_9.png)
+![fig_2_9](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_09.png)
 
 ## Fig 2.10
 ### 2.3.4 One-dimensional Gaussian distribution
@@ -178,7 +177,7 @@ where
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{N}(x|\mu,\sigma^2)&space;=&space;\frac{1}{\sqrt{2\pi\sigma^2}}\textup{exp}\left&space;\{&space;-\frac{(x-\mu)^2}{2\sigma^2}&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{N}(x|\mu,\sigma^2)&space;=&space;\frac{1}{\sqrt{2\pi\sigma^2}}\textup{exp}\left&space;\{&space;-\frac{(x-\mu)^2}{2\sigma^2}&space;\right&space;\}" title="\mathcal{N}(x|\mu,\sigma^2) = \frac{1}{\sqrt{2\pi\sigma^2}}\textup{exp}\left \{ -\frac{(x-\mu)^2}{2\sigma^2} \right \}" /></a>
 
-![fig_2_10](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_10.png)
+![fig_2_10](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_10.png)
 
 ## Fig 2.11
 ### 2.3.4 One-dimensional Gaussian distribution
@@ -191,7 +190,7 @@ where
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{KL}\left&space;[&space;q(x)||p(x))&space;\right&space;]&space;=&space;\frac{1}{2}\left&space;\{&space;\frac{(\mu&space;-&space;\hat{\mu})^2&plus;\hat{\sigma}^2}{\sigma^2}&space;&plus;&space;\textup{ln}\frac{\sigma^2}{\hat{\sigma}^2}-1&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{KL}\left&space;[&space;q(x)||p(x))&space;\right&space;]&space;=&space;\frac{1}{2}\left&space;\{&space;\frac{(\mu&space;-&space;\hat{\mu})^2&plus;\hat{\sigma}^2}{\sigma^2}&space;&plus;&space;\textup{ln}\frac{\sigma^2}{\hat{\sigma}^2}-1&space;\right&space;\}" title="\textup{KL}\left [ q(x)||p(x)) \right ] = \frac{1}{2}\left \{ \frac{(\mu - \hat{\mu})^2+\hat{\sigma}^2}{\sigma^2} + \textup{ln}\frac{\sigma^2}{\hat{\sigma}^2}-1 \right \}" /></a>
 
-![fig_2_11](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_11.png)
+![fig_2_11](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_11.png)
 
 
 ## Fig 2.12
@@ -202,7 +201,7 @@ where
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{N}(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^D\left&space;|&space;\Sigma&space;\right&space;|}}\textup{exp}\left&space;\{&space;-\frac{1}{2}(x-\mu)^\top&space;\Sigma^{-1}(x-\mu)&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{N}(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^D\left&space;|&space;\Sigma&space;\right&space;|}}\textup{exp}\left&space;\{&space;-\frac{1}{2}(x-\mu)^\top&space;\Sigma^{-1}(x-\mu)&space;\right&space;\}" title="\mathcal{N}(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^D\left | \Sigma \right |}}\textup{exp}\left \{ -\frac{1}{2}(x-\mu)^\top \Sigma^{-1}(x-\mu) \right \}" /></a>
 
-![fig_2_12](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_12.png)
+![fig_2_12](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_12.png)
 
 
 ## Fig 2.13
@@ -212,4 +211,4 @@ where
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{W}(\Lambda|\nu,&space;\textbf{W})=C_\mathcal{W}(\nu,\textbf{W})\left&space;|&space;\Lambda&space;\right&space;|^\frac{\nu-D-1}{2}\textup{exp}\left&space;\{&space;-\frac{1}{2}\textup{Tr}(\textbf{W}^{-1}\Lambda&space;)&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{W}(\Lambda|\nu,&space;\textbf{W})=C_\mathcal{W}(\nu,\textbf{W})\left&space;|&space;\Lambda&space;\right&space;|^\frac{\nu-D-1}{2}\textup{exp}\left&space;\{&space;-\frac{1}{2}\textup{Tr}(\textbf{W}^{-1}\Lambda&space;)&space;\right&space;\}" title="\mathcal{W}(\Lambda|\nu, \textbf{W})=C_\mathcal{W}(\nu,\textbf{W})\left | \Lambda \right |^\frac{\nu-D-1}{2}\textup{exp}\left \{ -\frac{1}{2}\textup{Tr}(\textbf{W}^{-1}\Lambda ) \right \}" /></a>
 
-![fig_2_13](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_13.png)
+![fig_2_13](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_13.png)
