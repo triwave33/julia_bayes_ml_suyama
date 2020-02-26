@@ -192,3 +192,24 @@ where
 <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{KL}\left&space;[&space;q(x)||p(x))&space;\right&space;]&space;=&space;\frac{1}{2}\left&space;\{&space;\frac{(\mu&space;-&space;\hat{\mu})^2&plus;\hat{\sigma}^2}{\sigma^2}&space;&plus;&space;\textup{ln}\frac{\sigma^2}{\hat{\sigma}^2}-1&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{KL}\left&space;[&space;q(x)||p(x))&space;\right&space;]&space;=&space;\frac{1}{2}\left&space;\{&space;\frac{(\mu&space;-&space;\hat{\mu})^2&plus;\hat{\sigma}^2}{\sigma^2}&space;&plus;&space;\textup{ln}\frac{\sigma^2}{\hat{\sigma}^2}-1&space;\right&space;\}" title="\textup{KL}\left [ q(x)||p(x)) \right ] = \frac{1}{2}\left \{ \frac{(\mu - \hat{\mu})^2+\hat{\sigma}^2}{\sigma^2} + \textup{ln}\frac{\sigma^2}{\hat{\sigma}^2}-1 \right \}" /></a>
 
 ![fig_2_11](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_11.png)
+
+
+## Fig 2.12
+### 2.3.2 Multivariate Gaussian distribution
+
+
+#### Multivariate Gaussian distribution
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{N}(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^D\left&space;|&space;\Sigma&space;\right&space;|}}\textup{exp}\left&space;\{&space;-\frac{1}{2}(x-\mu)^\top&space;\Sigma^{-1}(x-\mu)&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{N}(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^D\left&space;|&space;\Sigma&space;\right&space;|}}\textup{exp}\left&space;\{&space;-\frac{1}{2}(x-\mu)^\top&space;\Sigma^{-1}(x-\mu)&space;\right&space;\}" title="\mathcal{N}(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^D\left | \Sigma \right |}}\textup{exp}\left \{ -\frac{1}{2}(x-\mu)^\top \Sigma^{-1}(x-\mu) \right \}" /></a>
+
+![fig_2_12](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_12.png)
+
+
+## Fig 2.13
+### 2.3.6 Wishart distribution
+
+#### Wishart distribution
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{W}(\Lambda|\nu,&space;\textbf{W})=C_\mathcal{W}(\nu,\textbf{W})\left&space;|&space;\Lambda&space;\right&space;|^\frac{\nu-D-1}{2}\textup{exp}\left&space;\{&space;-\frac{1}{2}\textup{Tr}(\textbf{W}^{-1}\Lambda&space;)&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{W}(\Lambda|\nu,&space;\textbf{W})=C_\mathcal{W}(\nu,\textbf{W})\left&space;|&space;\Lambda&space;\right&space;|^\frac{\nu-D-1}{2}\textup{exp}\left&space;\{&space;-\frac{1}{2}\textup{Tr}(\textbf{W}^{-1}\Lambda&space;)&space;\right&space;\}" title="\mathcal{W}(\Lambda|\nu, \textbf{W})=C_\mathcal{W}(\nu,\textbf{W})\left | \Lambda \right |^\frac{\nu-D-1}{2}\textup{exp}\left \{ -\frac{1}{2}\textup{Tr}(\textbf{W}^{-1}\Lambda ) \right \}" /></a>
+
+![fig_2_13](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/fig_2_13.png)
