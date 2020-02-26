@@ -2,6 +2,7 @@ using Plots
 using Plots.PlotMeasures
 using LinearAlgebra
 using LaTeXStrings
+using Latexify
 
 # D-dimension Gaussian Distribution
 
@@ -30,11 +31,8 @@ l = @layout [a; b c]
 Z = exp.([D_log_Gauss([i; j], μ, Σ) for i in x1, j in x2]')
 
 a = plot(x1, x2, Z, st=:surface, camera= (30,60),
-    title = L"\mathcal{N}(x|\mu,\Sigma)=\frac{1}{\sqrt{(2\pi)^D\left | \Sigma \right |}}\textup{exp}\left \{ -\frac{1}{2}(x-\mu)^\top \Sigma^{-1}(x-\mu) \right \}",
-
-    ### matrices with LaTeXStrings does not work!!! (bug or my mistake)
-    #title=L"\begin{bmatrix}3.0&0.0 \\ 0.0&3.0 \\ \end{bmatrix}",
-
+    titlefont=15,
+    title=L"\Sigma = \left[ \begin{array}{cc} 3.0 & 0.0 \\ 0.0 & 3.0 \\ \end{array}\right]",
     left_margin=40mm, right_margin=40mm,
     xlabel=L"x_2", ylabel=L"x_1", zlabel="probability density",
     legend=:none)
@@ -43,18 +41,21 @@ a = plot(x1, x2, Z, st=:surface, camera= (30,60),
 Σ= [2.0 -sqrt(3); 
     -sqrt(3) 4.0 ]
 Z = exp.([D_log_Gauss([i; j], μ, Σ) for i in x1, j in x2]')
-
 b = plot(x1, x2, Z, st=:surface, camera= (30,60),
+    titlefont=15,
+    title=L"\Sigma = \left[ \begin{array}{cc} 2.0 & -\sqrt{3} \\ -\sqrt{3} & 4.0 \\ \end{array}\right]",
+
     legend=:none)
 
 ### case 3 ###
 Σ= [4.0 sqrt(3); 
      sqrt(3) 2.0]
 Z = exp.([D_log_Gauss([i; j], μ, Σ) for i in x1, j in x2]')
-
 c = plot(x1, x2, Z, st=:surface, camera= (30,60),
+    titlefont=15,
+    title=L"\Sigma = \left[ \begin{array}{cc} 4.0 & \sqrt{3} \\ \sqrt{3} & 2.0 \\ \end{array}\right]",
     legend=:none)
 
-plot(a,b,c, layout=l, size=(600,600))
+plot(a,b,c, layout=l, size=(800,800))
 savefig("fig_2_12.png")
 
