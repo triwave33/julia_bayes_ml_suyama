@@ -1,6 +1,7 @@
 using Plots
 using LaTeXStrings
 using SpecialFunctions
+using Distributions
 
 function Beta(μ, a, b)
   CB = gamma(a+b)/(gamma(a)*gamma(b))
