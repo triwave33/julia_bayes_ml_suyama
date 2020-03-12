@@ -192,6 +192,7 @@ where
 
 ![fig_2_11](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_11.png)
 
+__________________________________________________________________
 
 ## Fig 2.12
 ### 2.3.2 Multivariate Gaussian distribution
@@ -212,3 +213,28 @@ where
 <a href="https://www.codecogs.com/eqnedit.php?latex=\mathcal{W}(\Lambda|\nu,&space;\textbf{W})=C_\mathcal{W}(\nu,\textbf{W})\left&space;|&space;\Lambda&space;\right&space;|^\frac{\nu-D-1}{2}\textup{exp}\left&space;\{&space;-\frac{1}{2}\textup{Tr}(\textbf{W}^{-1}\Lambda&space;)&space;\right&space;\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathcal{W}(\Lambda|\nu,&space;\textbf{W})=C_\mathcal{W}(\nu,\textbf{W})\left&space;|&space;\Lambda&space;\right&space;|^\frac{\nu-D-1}{2}\textup{exp}\left&space;\{&space;-\frac{1}{2}\textup{Tr}(\textbf{W}^{-1}\Lambda&space;)&space;\right&space;\}" title="\mathcal{W}(\Lambda|\nu, \textbf{W})=C_\mathcal{W}(\nu,\textbf{W})\left | \Lambda \right |^\frac{\nu-D-1}{2}\textup{exp}\left \{ -\frac{1}{2}\textup{Tr}(\textbf{W}^{-1}\Lambda ) \right \}" /></a>
 
 ![fig_2_13](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch2/fig_2_13.png)
+
+_______________________________________________________________
+
+## Fig.3.3
+### 3.2 Learning and prediction of descrete probability distribution
+#### 3.2.1 Learning and prediction of Bernouli distribution
+
+Consider Bernouli destribution on a binary variablble x.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=x&space;\in&space;\{0,1\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?x&space;\in&space;\{0,1\}" title="x \in \{0,1\}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(x|\mu)=\textup{Bern}(x|\mu)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(x|\mu)=\textup{Bern}(x|\mu)" title="p(x|\mu)=\textup{Bern}(x|\mu)" /></a>
+
+Here, we want to learn the parameter …æ‘“πøˆ¨
+
+Posterior distribution can be expressed as beta distribution.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(\mu|\mathbf{X})=\textup{Beta}(\mu|\hat{a},\hat{b})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\mu|\mathbf{X})=\textup{Beta}(\mu|\hat{a},\hat{b})" title="p(\mu|\mathbf{X})=\textup{Beta}(\mu|\hat{a},\hat{b})" /></a>
+
+where
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\hat{a}&space;=&space;\sum_{n=1}^{N}x_n&plus;a" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{a}&space;=&space;\sum_{n=1}^{N}x_n&plus;a" title="\hat{a} = \sum_{n=1}^{N}x_n+a" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\hat{b}&space;=&space;N&space;-&space;\sum_{n=1}^{N}x_n&plus;b" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{b}&space;=&space;N&space;-&space;\sum_{n=1}^{N}x_n&plus;b" title="\hat{b} = N - \sum_{n=1}^{N}x_n+b" /></a>
+
