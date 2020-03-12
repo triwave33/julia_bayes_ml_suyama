@@ -226,9 +226,11 @@ Consider Bernouli destribution on a binary variablble x.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p(x|\mu)=\textup{Bern}(x|\mu)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(x|\mu)=\textup{Bern}(x|\mu)" title="p(x|\mu)=\textup{Bern}(x|\mu)" /></a>
 
-Here, we want to learn the parameter …æ‘“πøˆ¨
+Here, we want to learn the parameter µ. Thus we set Beta distribution as a prior distribution over µ.
 
-Posterior distribution can be expressed as beta distribution.
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(\mu)=\textup{Beta}(\mu|a,b)" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\mu)=\textup{Beta}(\mu|a,b)" title="p(\mu)=\textup{Beta}(\mu|a,b)" /></a>
+
+According to sampling (observation of N data points),  posterior distribution about the parameter (µ) can be expressed as a beta distribution with new hyperparameters.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=p(\mu|\mathbf{X})=\textup{Beta}(\mu|\hat{a},\hat{b})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\mu|\mathbf{X})=\textup{Beta}(\mu|\hat{a},\hat{b})" title="p(\mu|\mathbf{X})=\textup{Beta}(\mu|\hat{a},\hat{b})" /></a>
 
