@@ -241,3 +241,27 @@ where
 <a href="https://www.codecogs.com/eqnedit.php?latex=\hat{b}&space;=&space;N&space;-&space;\sum_{n=1}^{N}x_n&plus;b" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{b}&space;=&space;N&space;-&space;\sum_{n=1}^{N}x_n&plus;b" title="\hat{b} = N - \sum_{n=1}^{N}x_n+b" /></a>
 
 ![fig_3_03](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_03.png)
+
+
+_________________________________________________________
+
+## Fig.3.4
+### Learning and prediction of 1-D Gaussian distribution
+
+Precision (lambda) is unknown.
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(\lambda|x_*)=&space;\textup{Gam}(\lambda|\frac{1}{2}&plus;a,b(x_*))" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\lambda|x_*)=&space;\textup{Gam}(\lambda|\frac{1}{2}&plus;a,b(x_*))" title="p(\lambda|x_*)= \textup{Gam}(\lambda|\frac{1}{2}+a,b(x_*))" /></a>
+
+where
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=b(x_*)=\frac{1}{2}(x_*-\mu)^2&plus;b" target="_blank"><img src="https://latex.codecogs.com/gif.latex?b(x_*)=\frac{1}{2}(x_*-\mu)^2&plus;b" title="b(x_*)=\frac{1}{2}(x_*-\mu)^2+b" /></a>
+
+Logarithmic form of predictive distribution is expressed below,
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\textup{ln}\,p(x_*)=-\frac{2a&plus;1}{2}\textup{ln}\{1&plus;\frac{1}{2b}(x_*-\mu)^2\}&plus;&space;\textup{const.}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{ln}\,p(x_*)=-\frac{2a&plus;1}{2}\textup{ln}\{1&plus;\frac{1}{2b}(x_*-\mu)^2\}&plus;&space;\textup{const.}" title="\textup{ln}\,p(x_*)=-\frac{2a+1}{2}\textup{ln}\{1+\frac{1}{2b}(x_*-\mu)^2\}+ \textup{const.}" /></a>
+
+and alike to (logarithmic form of) **Student's t distribution**
+
+![fig_3_04](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_04.png)
+
+
