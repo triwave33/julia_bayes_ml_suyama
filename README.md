@@ -240,3 +240,4 @@ where
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\hat{b}&space;=&space;N&space;-&space;\sum_{n=1}^{N}x_n&plus;b" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\hat{b}&space;=&space;N&space;-&space;\sum_{n=1}^{N}x_n&plus;b" title="\hat{b} = N - \sum_{n=1}^{N}x_n+b" /></a>
 
+![fig_3_03](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_03.png)
