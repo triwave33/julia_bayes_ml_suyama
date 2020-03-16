@@ -279,7 +279,7 @@ and alike to (logarithmic form of) **Student's t distribution**
 
 ![fig_3_06](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_06.png)
 
-Fig.3.6 sampling of 3rd order function from pre-learned model
+Fig.3.6 sampling of 3rd order function from pre-trained model
 
 ![fig_3_07](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_07.png)
 
