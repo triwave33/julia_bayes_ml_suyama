@@ -264,4 +264,23 @@ and alike to (logarithmic form of) **Student's t distribution**
 
 ![fig_3_04](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_04.png)
 
+## Fig.3.6 & 3.7
 
+### 3.5 Linear Regression
+#### 3.5.1 model creation
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=y_n=\textbf{w}^\top&space;\textbf{x}_{n}&plus;\epsilon_n" target="_blank"><img src="https://latex.codecogs.com/gif.latex?y_n=\textbf{w}^\top&space;\textbf{x}_{n}&plus;\epsilon_n" title="y_n=\textbf{w}^\top \textbf{x}_{n}+\epsilon_n" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\epsilon_n\sim&space;\mathcal{N}(\epsilon_n|0,\lambda^{-1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\epsilon_n\sim&space;\mathcal{N}(\epsilon_n|0,\lambda^{-1})" title="\epsilon_n\sim \mathcal{N}(\epsilon_n|0,\lambda^{-1})" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(y_n|\textbf{x}_n,\textbf{w})=\mathcal{N}(y_n|\textbf{w}^\top\textbf{x}_n,\lambda^{-1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(y_n|\textbf{x}_n,\textbf{w})=\mathcal{N}(y_n|\textbf{w}^\top\textbf{x}_n,\lambda^{-1})" title="p(y_n|\textbf{x}_n,\textbf{w})=\mathcal{N}(y_n|\textbf{w}^\top\textbf{x}_n,\lambda^{-1})" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(\textbf{w})=\mathcal{N}(\textbf{w}|\textbf{m},&space;\mathbf{\Lambda}^{-1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\textbf{w})=\mathcal{N}(\textbf{w}|\textbf{m},&space;\mathbf{\Lambda}^{-1})" title="p(\textbf{w})=\mathcal{N}(\textbf{w}|\textbf{m}, \mathbf{\Lambda}^{-1})" /></a>
+
+![fig_3_06](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_06.png)
+
+Fig.3.6 sampling of 3rd order function from pre-learned model
+
+![fig_3_07](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_07.png)
+
+Fig 3.7 sampling of synthesized data (y_n) from the function.
