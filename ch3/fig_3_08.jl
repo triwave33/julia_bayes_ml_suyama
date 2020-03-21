@@ -1,6 +1,7 @@
 using Plots
 using Distributions
 using LinearAlgebra
+using Random
 
 function get_feature(x,M)
   # input: R^1
@@ -20,6 +21,7 @@ end
 N = 10 # sample num
 λ = 5.0
 x_range = (-1,6)
+Random.seed!(1234)
 x_arr = rand(Uniform(x_range...),N)
 y_arr = reshape(rand.(Normal.(sin.(x_arr), λ^(-1))), (N, 1))'
 
