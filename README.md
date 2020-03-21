@@ -313,7 +313,7 @@ where
 ## Fig 3.9
 ### Comparison between models
 
-- marginal likelihood
+#### marginal likelihood
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{ln}p(\mathbf{Y}|\mathbf{X})==\frac{1}{2}\{\sum_{n=1}^{N}(\lambda&space;y_n^2&space;-&space;\textup{ln}\lambda&plus;\textup{ln}2\pi)&plus;\mathbf{m}^{\top}\mathbf{\Lambda}\mathbf{m}-\textup{ln}|\mathbf{\Lambda}|&space;-&space;\hat{\mathbf{m}}^{\top}\hat{\mathbf{\Lambda}}\hat{\mathbf{m}}&plus;\textup{ln}|\hat{\mathbf{\Lambda}}|\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{ln}p(\mathbf{Y}|\mathbf{X})==\frac{1}{2}\{\sum_{n=1}^{N}(\lambda&space;y_n^2&space;-&space;\textup{ln}\lambda&plus;\textup{ln}2\pi)&plus;\mathbf{m}^{\top}\mathbf{\Lambda}\mathbf{m}-\textup{ln}|\mathbf{\Lambda}|&space;-&space;\hat{\mathbf{m}}^{\top}\hat{\mathbf{\Lambda}}\hat{\mathbf{m}}&plus;\textup{ln}|\hat{\mathbf{\Lambda}}|\}" title="\textup{ln}p(\mathbf{Y}|\mathbf{X})==\frac{1}{2}\{\sum_{n=1}^{N}(\lambda y_n^2 - \textup{ln}\lambda+\textup{ln}2\pi)+\mathbf{m}^{\top}\mathbf{\Lambda}\mathbf{m}-\textup{ln}|\mathbf{\Lambda}| - \hat{\mathbf{m}}^{\top}\hat{\mathbf{\Lambda}}\hat{\mathbf{m}}+\textup{ln}|\hat{\mathbf{\Lambda}}|\}" /></a>
 
