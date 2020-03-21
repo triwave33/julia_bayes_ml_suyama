@@ -76,7 +76,8 @@ end
 plot(PP...; dpi=300, layout=(length(M_arr))) 
 savefig("fig_3_08.png")
 
-plot(1:maximum(M_arr), likeli_arr, xlabel="M", ylabel=L"\textup{ln}p(\mathbf{Y}|\mathbf{X})")
+plot(1:maximum(M_arr), likeli_arr, xlabel="M", 
+      ylabel=L"\textup{ln}p(\mathbf{Y}|\mathbf{X})", legend=false)
 savefig("fig_3_09.png")
 
 
