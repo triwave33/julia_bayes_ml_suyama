@@ -284,3 +284,28 @@ Fig.3.6 sampling of 3rd order function from pre-trained model
 ![fig_3_07](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_07.png)
 
 Fig 3.7 sampling of synthesized data (y_n) from the function.
+
+## Fig.3.8
+### Calculation of posterior distribution and predictive distribution
+
+#### poterior distribution of parameter w in linear regression model
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(\mathbf{w}|\mathbf{Y},\mathbf{X})=\mathcal{N}(\mathbf{w}|\hat{\mathbf{m}},\hat{\mathbf{\Lambda}}^{-1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(\mathbf{w}|\mathbf{Y},\mathbf{X})=\mathcal{N}(\mathbf{w}|\hat{\mathbf{m}},\hat{\mathbf{\Lambda}}^{-1})" title="p(\mathbf{w}|\mathbf{Y},\mathbf{X})=\mathcal{N}(\mathbf{w}|\hat{\mathbf{m}},\hat{\mathbf{\Lambda}}^{-1})" /></a>
+
+where 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{\hat{\Lambda}}=\lambda\sum_{n=1}^{N}x_nx_n^{\top}&plus;\mathbf{\Lambda}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{\hat{\Lambda}}=\lambda\sum_{n=1}^{N}x_nx_n^{\top}&plus;\mathbf{\Lambda}" title="\mathbf{\hat{\Lambda}}=\lambda\sum_{n=1}^{N}x_nx_n^{\top}+\mathbf{\Lambda}" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mathbf{\hat{m}}=\mathbf{\hat{\Lambda}}^{-1}(\lambda\sum_{n=1}^{N}y_nx_n^{\top}&plus;\mathbf{\Lambda&space;m})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mathbf{\hat{m}}=\mathbf{\hat{\Lambda}}^{-1}(\lambda\sum_{n=1}^{N}y_nx_n^{\top}&plus;\mathbf{\Lambda&space;m})" title="\mathbf{\hat{m}}=\mathbf{\hat{\Lambda}}^{-1}(\lambda\sum_{n=1}^{N}y_nx_n^{\top}+\mathbf{\Lambda m})" /></a>
+
+#### predictive distribution
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(y_*|\mathbf{x}_*)=\mathcal{N}(y_*|\mu_*,\lambda_*^{-1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(y_*|x_*)=\mathcal{N}(y_*|\mu_*,\lambda_*^{-1})" title="p(y_*|x_*)=\mathcal{N}(y_*|\mu_*,\lambda_*^{-1})" /></a>
+
+where
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\mu_*=\mathbf{m}^{\top}\mathbf{x}_*" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\mu_*=\mathbf{m}^{\top}\mathbf{x}_*" title="\mu_*=\mathbf{m}^{\top}\mathbf{x}_*" /></a>
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\lambda_*^{-1}=\lambda^{-1}&plus;\mathbf{x}_*^{\top}\mathbf{\Lambda}^{-1}\mathbf{x}_*" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\lambda_*^{-1}=\lambda^{-1}&plus;\mathbf{x}_*^{\top}\mathbf{\Lambda}^{-1}\mathbf{x}_*" title="\lambda_*^{-1}=\lambda^{-1}+\mathbf{x}_*^{\top}\mathbf{\Lambda}^{-1}\mathbf{x}_*" /></a>
+
+![fig_3_08](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_08.png)
