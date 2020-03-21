@@ -4,8 +4,8 @@ using SpecialFunctions
 
 # Student's t distribution
 function St(x, μ, λ, ν)
-  gamma((ν+1)/2)/gamma(ν/2) \
-      *(λ/(π*ν))^0.5 *(1+ λ/ν *(x-μ)^2)^(-(ν+1)/2)
+  return (gamma((ν+1)/2)/gamma(ν/2) *
+      (λ/(π*ν))^0.5 *(1+ λ/ν *(x-μ)^2)^(-(ν+1)/2))
 end
 
 
