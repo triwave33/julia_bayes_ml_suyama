@@ -300,7 +300,7 @@ where
 
 #### predictive distribution
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=p(y_*|\mathbf{x}_*)=\mathcal{N}(y_*|\mu_*,\lambda_*^{-1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(y_*|x_*)=\mathcal{N}(y_*|\mu_*,\lambda_*^{-1})" title="p(y_*|x_*)=\mathcal{N}(y_*|\mu_*,\lambda_*^{-1})" /></a>
+<a href="https://www.codecogs.com/eqnedit.php?latex=p(y_*|\mathbf{x}_*)=\mathcal{N}(y_*|\mu_*,\lambda_*^{-1})" target="_blank"><img src="https://latex.codecogs.com/gif.latex?p(y_*|\mathbf{x}_*)=\mathcal{N}(y_*|\mu_*,\lambda_*^{-1})" title="p(y_*|\mathbf{x}_*)=\mathcal{N}(y_*|\mu_*,\lambda_*^{-1})" /></a>
 
 where
 
