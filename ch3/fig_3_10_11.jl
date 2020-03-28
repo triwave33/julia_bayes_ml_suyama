@@ -130,15 +130,30 @@ function fig_3_11()
   N_test = 20
   N_train_arr = 1:N_train
   N_trial = 50
-  
+
+  x_min = -10
+  x_max = 30
+  x_step = 0.01
+
+ 
   lin_rmse_arr = zeros(N_train)
+
+
   quad_rmse_arr = zeros(N_train)
+
+
   nn_rmse_arr = zeros(N_train)
 
   a = 1.0/40
   center=2.0
   λ = 13.0
-  
+  x_min = -10
+  x_max = 30
+  x_step = 0.01
+
+
+
+ 
   x_test, y_test = get_sample(N_test, x_min, x_max, a, center)
   for n in ProgressBar(N_train_arr)
     lin_tmp = 0 
