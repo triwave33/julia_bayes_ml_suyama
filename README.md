@@ -318,3 +318,12 @@ where
 <a href="https://www.codecogs.com/eqnedit.php?latex=\textup{ln}p(\mathbf{Y}|\mathbf{X})==\frac{1}{2}\{\sum_{n=1}^{N}(\lambda&space;y_n^2&space;-&space;\textup{ln}\lambda&plus;\textup{ln}2\pi)&plus;\mathbf{m}^{\top}\mathbf{\Lambda}\mathbf{m}-\textup{ln}|\mathbf{\Lambda}|&space;-&space;\hat{\mathbf{m}}^{\top}\hat{\mathbf{\Lambda}}\hat{\mathbf{m}}&plus;\textup{ln}|\hat{\mathbf{\Lambda}}|\}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\textup{ln}p(\mathbf{Y}|\mathbf{X})==\frac{1}{2}\{\sum_{n=1}^{N}(\lambda&space;y_n^2&space;-&space;\textup{ln}\lambda&plus;\textup{ln}2\pi)&plus;\mathbf{m}^{\top}\mathbf{\Lambda}\mathbf{m}-\textup{ln}|\mathbf{\Lambda}|&space;-&space;\hat{\mathbf{m}}^{\top}\hat{\mathbf{\Lambda}}\hat{\mathbf{m}}&plus;\textup{ln}|\hat{\mathbf{\Lambda}}|\}" title="\textup{ln}p(\mathbf{Y}|\mathbf{X})==\frac{1}{2}\{\sum_{n=1}^{N}(\lambda y_n^2 - \textup{ln}\lambda+\textup{ln}2\pi)+\mathbf{m}^{\top}\mathbf{\Lambda}\mathbf{m}-\textup{ln}|\mathbf{\Lambda}| - \hat{\mathbf{m}}^{\top}\hat{\mathbf{\Lambda}}\hat{\mathbf{m}}+\textup{ln}|\hat{\mathbf{\Lambda}}|\}" /></a>
 
 ![fig_3_09](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_09.png)
+
+## Fig 3.10
+### Comparison between models
+
+![fig_3_10](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_10.png)
+
+## Fig 3.11
+### Comparison between models
+![fig_3_11](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_11.png)
