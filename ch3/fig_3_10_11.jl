@@ -6,6 +6,23 @@ using ProgressBars
 
 ENV["GKSwstype"]="100"
 
+# global variables
+const N_train = 1000 # maximum num of sampling points 
+const N_test = 20 # sample points for calculate RMSE
+const N_train_arr = 1:N_train 
+const N_trial = 10 # averaging num for regression results (RMSE)
+
+const x_min = -10
+const x_max = 30
+const x_step = 0.01
+
+const a = 1.0/40
+const center=2.0
+const λ = 13.0
+const x_min = -10
+const x_max = 30
+const x_step = 0.01
+
 ######### sample point creation #########
 
 # make ground truth
@@ -35,7 +52,7 @@ function get_feature(x,M)
 end
 
 function get_feature_matrix(x_arr, M)
-  return cat(get_feature.(x_arr, M)..., dims=2)
+  return hcat(get_feature.(x_arr, M)...)
 end
 
 # regression
@@ -114,14 +131,6 @@ end
 
 
 function fig_3_10()
-  a = 1.0/40
-  center=2.0
-  λ = 13.0 
-  
-  # make ground truth
-  x_min = -10
-  x_max = 30
-  x_step = 0.01
   x_grid = x_min:x_step:x_max
   y_grid = truth.(x_grid, a, center)
   
@@ -137,7 +146,7 @@ function fig_3_10()
     x_sample, y_sample = get_sample(n, x_min, x_max, a, center)
   
     plot
-    p = plot()
+    p = plot(dpi=300)
     if i ==1
       p = plot_all_regs!(x_grid, y_grid, x_sample, y_sample, n; isPlot=true, m...)
     else
@@ -153,28 +162,11 @@ end
 
 ############# fig_3_11.jl ##############
 function fig_3_11()
-  N_train = 1000 # maximum num of sampling points 
-  N_test = 20 # sample points for calculate RMSE
-  N_train_arr = 1:N_train 
-  N_trial = 10 # averaging num for regression results (RMSE)
 
-  x_min = -10
-  x_max = 30
-  x_step = 0.01
-
- 
   lin_rmse_arr = zeros(N_train)
   quad_rmse_arr = zeros(N_train)
   nn_rmse_arr = zeros(N_train)
 
-  a = 1.0/40
-  center=2.0
-  λ = 13.0
-  x_min = -10
-  x_max = 30
-  x_step = 0.01
-
- 
   x_test, y_test = get_sample(N_test, x_min, x_max, a, center)
   for n in ProgressBar(N_train_arr) # increasing sample points
     lin_tmp = 0 
@@ -203,7 +195,7 @@ function fig_3_11()
   end
     
     
-  plot()
+  plot(dpi=300)
   plot!(log10.(lin_rmse_arr), xaxis=:log,  label="lin")
   plot!(log10.(quad_rmse_arr), xaxis=:log,  label="quad")
   plot!(log10.(nn_rmse_arr), xaxis=:log,  label="nn")
