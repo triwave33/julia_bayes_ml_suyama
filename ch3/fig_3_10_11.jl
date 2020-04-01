@@ -10,7 +10,7 @@ ENV["GKSwstype"]="100"
 const N_train = 1000 # maximum num of sampling points 
 const N_test = 20 # sample points for calculate RMSE
 const N_train_arr = 1:N_train 
-const N_trial = 10 # averaging num for regression results (RMSE)
+const N_trial = 1000 # averaging num for regression results (RMSE)
 
 const x_min = -10
 const x_max = 30
@@ -196,9 +196,9 @@ function fig_3_11()
     
     
   plot(xlabel="N", ylabel="RMSE", dpi=300)
-  plot!(log10.(lin_rmse_arr), xaxis=:log,  label="lin")
-  plot!(log10.(quad_rmse_arr), xaxis=:log,  label="quad")
-  plot!(log10.(nn_rmse_arr), xaxis=:log,  label="nn")
+  plot!((lin_rmse_arr), xaxis=:log10, yaxis=:log10,  label="lin")
+  plot!((quad_rmse_arr), xaxis=:log10, yaxis=:log10,  label="quad")
+  plot!((nn_rmse_arr), xaxis=:log10, yaxis=:log10,  label="nn")
   savefig("fig_3_11.png")
 end
 
