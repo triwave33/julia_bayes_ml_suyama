@@ -106,7 +106,7 @@ function plot_all_regs!(x_grid, y_grid, x_sample, y_sample,  N; isPlot, kwargs..
   a = 1.0/40
   center = 2
 
-  p = plot()
+  p = plot(xlabel="x", ylabel="y")
   p = plot!(x_grid, y_grid, label="truth"; kwargs...)
   p, _ = pred_poly_reg!(λ, x_sample, y_sample, x_grid, 2; isPlot=isPlot, label="line")
   p, _ = pred_poly_reg!(λ, x_sample, y_sample, x_grid, 3; isPlot=isPlot, label="quad")
@@ -195,7 +195,7 @@ function fig_3_11()
   end
     
     
-  plot(dpi=300)
+  plot(xlabel="N", ylabel="RMSE", dpi=300)
   plot!(log10.(lin_rmse_arr), xaxis=:log,  label="lin")
   plot!(log10.(quad_rmse_arr), xaxis=:log,  label="quad")
   plot!(log10.(nn_rmse_arr), xaxis=:log,  label="nn")
