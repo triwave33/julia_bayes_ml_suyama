@@ -3,9 +3,7 @@ using Distributions
 using LinearAlgebra
 using LaTeXStrings
 
-# Global constants
-
-
+# Sample creation
 # Class 1
 N1 = 100
 sigma = 0.3
