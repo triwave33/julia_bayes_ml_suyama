@@ -327,3 +327,11 @@ where
 ## Fig 3.11
 ### Comparison between models
 ![fig_3_11](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_11.png)
+
+## Fig 4.1
+### The reason to adapt mixture model
+
+A single Gaussian distribution cannot represent sample distribution with multi class (culsters).
+
+![fig_4_1](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch4/fig_4_01.png)
+
