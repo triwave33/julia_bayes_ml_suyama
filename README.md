@@ -328,10 +328,13 @@ where
 ### Comparison between models
 ![fig_3_11](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch3/fig_3_11.png)
 
-## Fig 4.1
+## Fig 4.1 & 4.2
 ### The reason to adapt mixture model
 
-A single Gaussian distribution cannot represent sample distribution with multi class (culsters).
+A single Gaussian distribution cannot represent sample distribution with multi classes (culsters).
 
 ![fig_4_1](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch4/fig_4_01.png)
 
+Similary, a polynominal linear regression curve cannot fit to two trends. When M (polynominal dimension) is 4, the fitted curve shows average values between two trends. When M is 30, the curve goes back and forth between two trends. We should assume multiple (two) regresion functions in such data trends.
+
+![fig_4_2](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch4/fig_4_02.png)
