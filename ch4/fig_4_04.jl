@@ -19,7 +19,7 @@ function get_ellipse_data(A)
 end
 
 
-function plot_ellipse(len_major, len_minor, α; kwargs...)
+function plot_ellipse(μ, len_major, len_minor, α; kwargs...)
   rot = [cos(α) -sin(α);
         sin(α) cos(α)]
 
@@ -27,10 +27,11 @@ function plot_ellipse(len_major, len_minor, α; kwargs...)
   x = len_major*cos.(t)
   y = len_minor*sin.(t)
   ellipse_mat = [x y] * rot
-  l = plot!(ellipse_mat[:,1], ellipse_mat[:,2],
-            legend=:false, xlim=(-2,2), ylim=(-2,2),
+  l = plot!(μ[1] .+ ellipse_mat[:,1], μ[2] .+ ellipse_mat[:,2],
+            legend=:topright, xlim=(-2,2), ylim=(-2,2),
             xlabel=L"x", ylabel=L"y",
             ; kwargs...)
+  l = plot!([μ[1]], [μ[2]], markershape=:xcross, legend=false; kwargs...)
   return l
 end
 
@@ -76,29 +77,20 @@ end
   
 
 
-function Gibbs_sampling()
+function Gibbs_sampling(start_point::Array{Float64, 1}, μ::Array{Float64, 1}, Σ::Array{Float64, 2})
   # Gibbs Sampling
-  start_point = rand(Uniform(-10,10), 2)
   x_old = start_point[1]
   y_old = start_point[2]
   isPlot = true
-  N_Gibbs = 100
+  N_Gibbs = 30
   xy_arr = zeros(N_Gibbs, 2)
   usePres = false
 
-  print("start_point")
-  print(start_point)
-
-  # true distributions
-  μ = [0,0]
-  #Σ = [1 0.5; 0.5 1]
-  Σ = [1 -0.9 ; -0.9 1] .* 0.3 
-  #Σ = [3 3.4 ; 3.4 3]
-  
+ 
   # plot true distribution
   ax1, ax2, α = get_ellipse_data(Σ)
   a = plot()
-  a = plot_ellipse(μ[1] + ax1, μ[2] + ax2, α)
+  a = plot_ellipse(μ, ax1, ax2, α, color=:blue)
 
  
   for i in 1:N_Gibbs
@@ -138,23 +130,37 @@ function Gibbs_sampling()
   ν̂ = N_Gibbs + ν
 
   # plot sample
-  for i in 1:3
+  for i in 1:1 # one time
     # sampling from Gaussian-Wishart distribution (prior distribution)
     Λ = rand(Wishart(ν̂, inv(Ŵ_inv)))
     μ = rand(MvNormal(m̂[:,1], inv(β̂ .* Λ)))
     ax1,ax2, α = get_ellipse_data(inv(Λ))
-    a = plot_ellipse(μ[1] + ax1, μ[2] + ax2, α, label="q(x,y)")
-    plot!(a, annotations=[(-0.6,-2.3, text("Fig.4.1. representation by single Gaussian distribution", 12))])
+    a = plot_ellipse(μ, ax1, ax2, α, label="q(x,y)", color=:red)
   end
 
 
-  savefig("fig_4_04.png")
+  return a
   
 end
 
-Gibbs_sampling()
 
+## CASE 1
+# true distributions
+μ = [0.0,0.0]
+Σ = [1 -0.3 ; -0.3 1] .* 0.3 
+start_point = [1.5, -1.5]
+a = Gibbs_sampling(start_point, μ, Σ)
 
+## CASE 2
+# true distributions
+μ = [0.0,0.0]
+Σ = [1 -0.85 ; -0.85 1] .* 0.3 
+start_point = [1.5, -1.5]
+b = Gibbs_sampling(start_point, μ, Σ)
+
+l = @layout [a b]
+plot(a,b, layout=l, size=(1000,400))
+savefig("fig_4_04.png")
 
 
 
