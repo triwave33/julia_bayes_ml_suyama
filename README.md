@@ -338,3 +338,13 @@ A single Gaussian distribution cannot represent sample distributions with multi 
 Similary, a polynominal linear regression curve cannot fit to two trends. When M (polynominal dimension) is 4, the fitted curve shows average values between two trends. When M is 30, the curve goes back and forth between two trends. We should assume multiple (two) regresion functions in such data trends.
 
 ![fig_4_2](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch4/fig_4_02.png)
+
+
+
+## Fig 4.4
+### Gibbs sampling
+
+
+
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=\begin{align*}&space;z_1^{(i)}&space;&\sim&&space;p(z_1&space;|&space;z_2^{(i-1)})&space;\\&space;z_2^{(i)}&space;&\sim&&space;p(z_1&space;|&space;z_1^{(i)})&space;\\&space;\end{align}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{align*}&space;z_1^{(i)}&space;&\sim&&space;p(z_1&space;|&space;z_2^{(i-1)})&space;\\&space;z_2^{(i)}&space;&\sim&&space;p(z_1&space;|&space;z_1^{(i)})&space;\\&space;\end{align}" title="\begin{align*} z_1^{(i)} &\sim& p(z_1 | z_2^{(i-1)}) \\ z_2^{(i)} &\sim& p(z_1 | z_1^{(i)}) \\ \end{align}" /></a>
