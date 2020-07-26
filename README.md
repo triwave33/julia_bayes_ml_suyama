@@ -348,3 +348,6 @@ Similary, a polynominal linear regression curve cannot fit to two trends. When M
 
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=\begin{align*}&space;z_1^{(i)}&space;&\sim&&space;p(z_1&space;|&space;z_2^{(i-1)})&space;\\&space;z_2^{(i)}&space;&\sim&&space;p(z_1&space;|&space;z_1^{(i)})&space;\\&space;\end{align}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?\begin{align*}&space;z_1^{(i)}&space;&\sim&&space;p(z_1&space;|&space;z_2^{(i-1)})&space;\\&space;z_2^{(i)}&space;&\sim&&space;p(z_1&space;|&space;z_1^{(i)})&space;\\&space;\end{align}" title="\begin{align*} z_1^{(i)} &\sim& p(z_1 | z_2^{(i-1)}) \\ z_2^{(i)} &\sim& p(z_1 | z_1^{(i)}) \\ \end{align}" /></a>
+
+![fig_4_4](https://github.com/triwave33/julia_bayes_ml_suyama/blob/master/ch4/fig_4_04.png)
+
